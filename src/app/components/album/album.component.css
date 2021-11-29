@@ -1,0 +1,112 @@
+.title-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+}
+
+.title-container > * {
+    margin: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
+    font-weight: 200;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+ul {
+    display: grid;
+    text-align: center;
+    width: 80%;
+}
+
+li {
+    color: white;
+    height: 4rem;
+    margin: 1rem;
+    padding: .4rem;
+}
+
+li:hover {
+    background-color: hsla(0,0%,100%,0.07);
+}
+
+.track-headers {
+    display: flex;
+    justify-content: space-around;
+    /*margin-bottom: 1.5rem;
+    padding-bottom: .3rem;*/
+    border-bottom: 1px solid white;
+    font-size: 1.5rem;
+}
+
+.track-data {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.track-box {
+   width: 34%;
+   text-align: center;
+}
+
+.track-title {
+    padding-left: 1.5rem;
+}
+
+.play-sample, .stop-sample {
+    cursor: pointer;
+}
+
+.prueba {
+    width: 900px;
+    height: 100px;
+    border: 1px solid yellow;
+    background-color: white;
+}
+
+.music-player-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    min-height: 80px;
+    color:white;
+    font-size: 1.3rem;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding-top: 1rem;
+}
+
+.music-controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.music-full {
+    font-size: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.img-player {
+    width: 3rem;
+    height: 3rem;
+    filter: invert(1);
+    cursor: pointer;
+}
+

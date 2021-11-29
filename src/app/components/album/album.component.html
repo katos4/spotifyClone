@@ -1,0 +1,45 @@
+<div class="title-container">
+    <div class="title-img">
+        <img src={{albumTitleImg}}/>
+    </div>
+    <label>{{albumTitle}}</label>
+</div>
+
+<div class="container">
+    <ul>
+        <div class="track-headers">
+            <label class="track-title"># Título</label>
+            <label class="track-artist">Artista</label>
+            <label class="track-duration">Duración</label>
+        </div>
+        <li *ngFor="let item of tracks">
+            <div class="track-data" (click)="playAudio(item)">
+                <div class="track-box">
+                    {{item?.track_number}} - {{item.name}}
+                </div>
+                <div class="track-box">
+                    {{item?.artists[0].name}}
+                </div>
+                <div class="track-box">
+                    {{item?.duration_min}}
+                </div>
+                <!--<span class="play-sample" #playSample (click)="playAudio(item)">Preview</span>-->
+            </div>
+        </li>   
+    </ul>
+    <div class="music-player-container">
+        <div class="music-controls">
+            <div class="now-playing-track-name">{{nowPlaying}}</div>
+            <img class="img-player" (click)="stopAudio()" #playButton [src]=imagePlayer/>
+            <div class="now-playing-artist-name">{{nowArtist}}</div>
+        </div>
+        <div class="music-full">
+            <span>{{errorSong}}</span>
+            <span>
+                <a href="{{listenFull}}" target="_blank">{{listenMsg}}</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+

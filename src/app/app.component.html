@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="nav-container">
+        <img class="logo" src="../assets/logo.png"/>
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav-link" id="link-nav" [routerLink]="['/']" [routerLinkActive]="['active']">Inicio</a>
+                </li>
+                <li>
+                    <a class="nav-link" id="link-nav" [routerLink]="['/albumes']" [routerLinkActive]="['active']">Últimos</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+    <div class="main-section" id="main-section">
+        <router-outlet></router-outlet>
+     </div>
+</div>
+
